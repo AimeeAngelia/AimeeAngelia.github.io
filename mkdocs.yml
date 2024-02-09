@@ -66,6 +66,10 @@ nav:
     - Commend/ls.md
     - Commend/cd.md
     - Commend/pwd.md
+    - Commend/mkdir.md
+    - Commend/touch.md
+    - Commend/cat.md
+    - Commend/more.md
   - Ubuntu-Exploring: 
     - under-construction.md
   - Windows-Exploring:
