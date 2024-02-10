@@ -71,7 +71,8 @@ nav:
     - Commend/cat.md
     - Commend/more.md
   - Ubuntu-Exploring: 
-    - under-construction.md
+    - Ubuntu-Exploring/clash.md
+    - Ubuntu-Exploring/index.md
   - Windows-Exploring:
     - under-construction.md
   - Android-Exploring:
