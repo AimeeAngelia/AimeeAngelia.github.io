@@ -59,7 +59,8 @@ copyright: |
   &copy; 2024 <a href="https://github.com/AimeeAngelia" target="_blank" rel="noopener">Aimee Angelia</a>
 
 nav:
-  - Home: index.md
+  - Home: Note/stir.md
+  # - Home: index.md
   # - About: about.md
   - Commend: 
     - Commend/index.md
