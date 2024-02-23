@@ -74,10 +74,12 @@ nav:
   - Ubuntu-Exploring: 
     - Ubuntu-Exploring/clash.md
     - Ubuntu-Exploring/index.md
-  - Windows-Exploring:
-    - under-construction.md
-  - Android-Exploring:
-    - under-construction.md
+    #  -----no files-----
+  # - Windows-Exploring:
+    # - under-construction.md
+  # - Android-Exploring:
+    # - under-construction.md
+    # -------------------
   - Note:
     - Note/stir.md
     - Note/fonts.md
