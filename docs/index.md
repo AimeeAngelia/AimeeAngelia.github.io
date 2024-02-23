@@ -29,7 +29,3 @@
 魔法这种东西其探索的过程才是最有趣的。 ------ 邓肯
 
 ![stir.Frieren.webp](https://s2.loli.net/2024/02/23/rHZOVuBpyER13qM.webp)
-
-## 萌图哎😘
-
-![img](https://t.mwm.moe/moe/)
