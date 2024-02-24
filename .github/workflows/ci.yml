@@ -4,7 +4,7 @@ on:
     branches:
       - master
       - main
-      - Utterances-that-stir-the-soul
+      # - Utterances-that-stir-the-soul
 permissions:
   contents: write
 jobs:
