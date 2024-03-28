@@ -4,6 +4,7 @@ on:
     branches:
       - master
       - main
+      - URLChange(trial)
       # - Utterances-that-stir-the-soul
 permissions:
   contents: write
