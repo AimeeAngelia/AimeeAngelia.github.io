@@ -71,6 +71,9 @@ nav:
     - Commend/touch.md
     - Commend/cat.md
     - Commend/more.md
+    - Commend/cp.md
+    - Commend/mv.md
+    - Commend/rm.md
   - Ubuntu-Exploring: 
     - Ubuntu-Exploring/clash.md
     - Ubuntu-Exploring/index.md
