@@ -44,4 +44,4 @@
 
 流泪告别并不适合我们，因为再见面的时候会很难为情。 ------ 辛美尔&&芙莉莲 
 
-![stir.Frieren.webp](https://s2.loli.net/2024/02/23/rHZOVuBpyER13qM.webp)
+![stir.Frieren.webp](picture/Note/stir/Frieren.webp)
