@@ -81,15 +81,9 @@ nav:
     - Commend/grep.md
     - Commend/wc.md
     - Commend/PipeCharacter.md
-  - Ubuntu-Exploring: 
-    - Ubuntu-Exploring/clash.md
-    - Ubuntu-Exploring/index.md
-    #  -----no files-----
-  # - Windows-Exploring:
-    # - under-construction.md
-  # - Android-Exploring:
-    # - under-construction.md
-    # -------------------
-  - Note:
-    - Note/stir.md
-    - Note/fonts.md
+  # - Ubuntu-Exploring: 
+    # - Ubuntu-Exploring/clash.md
+    # - Ubuntu-Exploring/index.md
+  # - Note:
+    # - Note/stir.md
+    # - Note/fonts.md
