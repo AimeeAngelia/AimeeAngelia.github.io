@@ -79,6 +79,7 @@ nav:
     - Commend/echo.md
     - Commend/echo``.md
     - Commend/grep.md
+    - Commend/wc.md
     - Commend/PipeCharacter.md
   - Ubuntu-Exploring: 
     - Ubuntu-Exploring/clash.md
