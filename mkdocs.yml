@@ -76,6 +76,10 @@ nav:
     - Commend/rm.md
     - Commend/which.md
     - Commend/find.md
+    - Commend/echo.md
+    - Commend/echo``.md
+    - Commend/grep.md
+    - Commend/PipeCharacter.md
   - Ubuntu-Exploring: 
     - Ubuntu-Exploring/clash.md
     - Ubuntu-Exploring/index.md
