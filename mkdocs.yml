@@ -74,6 +74,8 @@ nav:
     - Commend/cp.md
     - Commend/mv.md
     - Commend/rm.md
+    - Commend/which.md
+    - Commend/find.md
   - Ubuntu-Exploring: 
     - Ubuntu-Exploring/clash.md
     - Ubuntu-Exploring/index.md
