@@ -1,11 +1,4 @@
-# Welcome to Commend💫
-
-欢迎来到 Ubuntu 学习笔记的世界，这是一方专属领域，记录着代码的律动和技术的心事。
-
-指令的舞蹈，代码的旋律，每一行字符都是一篇学习的诗章。在这片虚拟的领域里，与 Ubuntu 共舞，将技术的繁星点缀成一幅属于学习者的星空画卷。
-
-或许你是初涉 Linux 的学子，或许你是代码世界的闯入者，这里将是你学习的港湾。代码是思考的载体，每一次学习都是心灵的旅程。在这里，让我们一同逐字逐句地书写 Ubuntu 学习的故事，用代码的语言谱写技术的诗篇。
-
-指令如诗，代码如画，愿 `commend` 分区成为你技术探索的乐园。在这学无止境的旅途中，让我们共同领略代码的诗意，发现 Ubuntu 的奇妙世界。
-
-"命令行下的诗篇，代码中的智慧，愿学习之路，如诗一般美妙。"
+# 哔哩哔哩课程进度
+* 加油加油加油💪⛽️
+<!-- <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=604566039&bvid=BV1n84y1i7td&cid=877124096&p=22" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe> -->
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=604566039&bvid=BV1n84y1i7td&cid=877120366&p=23" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
