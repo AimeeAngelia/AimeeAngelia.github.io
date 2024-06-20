@@ -83,6 +83,8 @@ nav:
     - Commend/PipeCharacter.md
     - Commend/RedirectionCharacter.md
     - Commend/tail.md
+  - Software:
+    - Software/index.md
   # - Ubuntu-Exploring: 
     # - Ubuntu-Exploring/clash.md
     # - Ubuntu-Exploring/index.md
