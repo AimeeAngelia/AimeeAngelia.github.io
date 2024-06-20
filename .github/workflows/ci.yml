@@ -4,7 +4,7 @@ on:
     branches:
       - master
       - main
-      - BiliBili
+      # - BiliBili
       # - URLChange(trial)
       # - Utterances-that-stir-the-soul
 permissions:
