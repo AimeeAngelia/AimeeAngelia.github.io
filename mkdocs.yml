@@ -60,9 +60,7 @@ copyright: |
 
 nav:
   # - Home: Note/stir.md
-  - Home:
-    - time-is.md
-  # - Home: index.md
+  - Home: index.md
   # - About: about.md
   - Commend: 
     - Commend/index.md
@@ -88,6 +86,9 @@ nav:
   - Software:
     - Software/index.md
     - Software/vim.md
+  - time:
+    - time-is.md
+    - time-new.md
   # - Ubuntu-Exploring: 
     # - Ubuntu-Exploring/clash.md
     # - Ubuntu-Exploring/index.md
