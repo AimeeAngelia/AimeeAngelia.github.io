@@ -87,12 +87,12 @@ nav:
     - Software/index.md
     - Software/vim.md
   - time:
-    - time-is.md
-    - time-new.md
-    - time-100px.md
+    - 16.md
+    - 26.md
+    - 36.md
     - 46.md
-    - 62.md
-    - 80.md
+    - 56.md
+    - 66.md
   # - Ubuntu-Exploring: 
     # - Ubuntu-Exploring/clash.md
     # - Ubuntu-Exploring/index.md
