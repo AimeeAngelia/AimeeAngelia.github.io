@@ -81,6 +81,8 @@ nav:
     - Commend/grep.md
     - Commend/wc.md
     - Commend/PipeCharacter.md
+    - Commend/RedirectionCharacter.md
+    - Commend/tail.md
   # - Ubuntu-Exploring: 
     # - Ubuntu-Exploring/clash.md
     # - Ubuntu-Exploring/index.md
