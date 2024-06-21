@@ -1,6 +1,6 @@
 site_name: Aimee's Nook✨✨✨
 site_url: https://www.ANook.cc/
-site_author: Aimee
+site_author: Kitte
 theme:
   name: material
   features:
@@ -13,21 +13,41 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: zh-TW
+  language: zh
+  font:
+    text: Roboto
+    code: Roboto Mono
   palette:
-    - scheme: slate
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: switch to light mode
-      primary: teal
-      accent: purple
-    - scheme:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-7
         name: switch to dark mode
-      primary: teal
-      accent: lime
+      primary: indigo
+      accent: green
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+      primary: teal     
+      accent: purple
+    
+
   # logo: assets/favicon.png
+
+plugins:
+  - search
+  - blog
 
 extra:
   social:
@@ -83,8 +103,17 @@ nav:
     - Commend/PipeCharacter.md
     - Commend/RedirectionCharacter.md
     - Commend/tail.md
+    - Commend/root.md
   - Software:
     - Software/index.md
+    - Software/vim.md
+  - time:
+    - 16.md
+    - 26.md
+    - 36.md
+    - 46.md
+    - 56.md
+    - 66.md
   # - Ubuntu-Exploring: 
     # - Ubuntu-Exploring/clash.md
     # - Ubuntu-Exploring/index.md
