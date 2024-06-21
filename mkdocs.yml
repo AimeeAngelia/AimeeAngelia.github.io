@@ -24,20 +24,19 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-        toggle:
-          icon: material/brightness-4
-          name: switch to light mode
-        primary: teal
-        accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: switch to light mode
+      primary: teal        accent: purple
     
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme:
-        toggle:
-          icon: material/brightness-7
-          name: switch to dark mode
-        primary: indigo
-        accent: green
+      toggle:
+        icon: material/brightness-7
+        name: switch to dark mode
+      primary: indigo
+      accent: green
   # logo: assets/favicon.png
 
 plugins:
