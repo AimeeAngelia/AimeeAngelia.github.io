@@ -25,13 +25,14 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: switch to dark mode
-      primary: teal
+      primary: indigo
       accent: lime
   # logo: assets/favicon.png
 
 plugins:
   - search
   - blog
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
