@@ -103,6 +103,7 @@ nav:
     - Commend/PipeCharacter.md
     - Commend/RedirectionCharacter.md
     - Commend/tail.md
+    - Commend/root.md
   - Software:
     - Software/index.md
     - Software/vim.md
