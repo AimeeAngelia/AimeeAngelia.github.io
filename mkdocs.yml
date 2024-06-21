@@ -27,7 +27,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: switch to light mode
-      primary: teal        accent: purple
+      primary: teal     
+      accent: purple
     
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
