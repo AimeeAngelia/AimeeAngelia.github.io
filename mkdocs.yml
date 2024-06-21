@@ -29,6 +29,9 @@ theme:
       accent: lime
   # logo: assets/favicon.png
 
+plugins:
+  - search
+  - blog
 extra:
   social:
     - icon: fontawesome/brands/github-alt
