@@ -13,7 +13,7 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-image: url('aimeeangelia.github.io/Pictures/kawaii.jpg');
+            background-image: url('https://aimeeangelia.github.io/Pictures/kawaii.jpg');
             background-size: cover;
             background-position: center;
             color: white;
