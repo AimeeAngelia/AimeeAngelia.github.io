@@ -5,6 +5,7 @@ on:
       - master 
       - main
       - vim
+      - root
 permissions:
   contents: write
 jobs:

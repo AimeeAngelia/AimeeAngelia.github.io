@@ -1,47 +1,96 @@
-# Utterances that stir the soul.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机密码哎😘~</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('aimeeangelia.github.io/Pictures/kawaii.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        #password {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px 0;
+            text-align: center;
+            width: 200px;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .options label {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>随机密码生成器</h1>
+    <input type="number" id="length" placeholder="输入密码长度 (默认16)" min="1" max="128" value="16">
+    <div class="options">
+        <label><input type="checkbox" id="uppercase" checked> 大写字母</label>
+        <label><input type="checkbox" id="lowercase" checked> 小写字母</label>
+        <label><input type="checkbox" id="numbers" checked> 数字</label>
+        <label><input type="checkbox" id="special" checked> 特殊字符</label>
+    </div>
+    <div id="password">点击按钮生成密码</div>
+    <button onclick="generatePassword()">生成密码</button>
+    <div class="footer">
+        v0.0.1 作者: @Kitte
+    </div>
+    <script>
+        function generatePassword() {
+            const length = parseInt(document.getElementById("length").value) || 16;
+            const useUppercase = document.getElementById("uppercase").checked;
+            const useLowercase = document.getElementById("lowercase").checked;
+            const useNumbers = document.getElementById("numbers").checked;
+            const useSpecial = document.getElementById("special").checked;
 
-## 《**葬送的芙莉莲**》**⌈葬送のフリーレン⌋**
+            let charset = "";
+            if (useUppercase) charset += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            if (useLowercase) charset += "abcdefghijklmnopqrstuvwxyz";
+            if (useNumbers) charset += "0123456789";
+            if (useSpecial) charset += "!@#$%^&*()_+[]{}|;:',.<>?";
 
-芙莉莲，其实我最喜欢的魔法是能绽放出美丽花田的魔法。 ------ 伏拉梅
+            if (charset === "") {
+                document.getElementById("password").innerText = "请选择至少一个字符类型";
+                return;
+            }
 
-努力过的人皆为战士。 ------ 艾泽
-
-酒为百药之长(笑)。 ------ 海塔 && 费伦
-
-他已经失去了父母，我不能再夺走他的故乡。 ------ 赞因的哥哥
-
-仅仅是一场十年的旅行啊。 ------ 芙莉莲
-
-一般情况下可没有人会拒绝“随便选你喜欢的吧”这句话啊。之所以你拒绝了这个提议是因为这句话里包含着重要的回忆。 ------ 赞因
-
-如果你不把自己的想法说出口的话，别人是不会明白的。 ------ 赞因
-
-一个人的时候竟然会这么安静啊。 ------ 赞因
-
-我只是一直，以理想的大人为目标，装出一副大人该有的样子，一步一步积累至今而已。 ------海塔
-
-小孩子是需要有一个能成为自己心灵支柱的大人在身边的。 ------ 海塔
-
-我一直觉得、一个人所擅长的魔法取决于那个人本身的性格和经历。 ------ 尤贝尔
-
-我会犹豫、也会胆怯，尽管如此，我还是杀死了所有有必要杀的人。 ------ 威亚贝鲁
-
-魔法就是在探求它的时候才是最有趣的哦。 ------ 芙莉莲
-
-魔法这种东西其探索的过程才是最有趣的。 ------ 邓肯
-
-魔法这种东西不过是杀人的工具而已，还分喜欢与否？ ------ 威亚贝鲁
-
-对我而言，魔法不过是政治争斗的道具罢了。 ------ 邓肯
-
-困难的委托会让人兴奋啊。 ------ 辛美尔
-
-如果是勇者辛美尔的话，肯定也会这么做的。 ------ 芙莉莲 && 菲伦 && 修塔尔克 && 海塔 && 艾泽
-
-年轻人真是血气方刚啊。 ------ 芙莉莲 && 邓肯
-
-所谓的永别不见得只有生死一别。 ------ 威亚贝鲁
-
-流泪告别并不适合我们，因为再见面的时候会很难为情。 ------ 辛美尔&&芙莉莲 
-
-![stir.Frieren.webp](https://aimeeangelia.github.io/Pictures/stir/Frieren.webp)
+            let password = "";
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * charset.length);
+                password += charset[randomIndex];
+            }
+            document.getElementById("password").innerText = password;
+        }
+    </script>
+</body>
+</html>
