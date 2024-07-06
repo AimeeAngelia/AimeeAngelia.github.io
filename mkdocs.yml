@@ -80,7 +80,7 @@ copyright: |
 
 nav:
   - Home: 
-    - index.md
+    - index.html
     - index.old.md
   - Commend: 
     - Commend/index.md
