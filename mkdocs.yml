@@ -79,9 +79,9 @@ copyright: |
   &copy; 2024 <a href="https://github.com/AimeeAngelia" target="_blank" rel="noopener">Aimee Angelia</a>
 
 nav:
-  # - Home: Note/stir.md
-  - Home: index.md
-  # - About: about.md
+  - Home: 
+    - index.html
+    - index.old.md
   - Commend: 
     - Commend/index.md
     - Commend/ls.md
@@ -104,16 +104,11 @@ nav:
     - Commend/RedirectionCharacter.md
     - Commend/tail.md
     - Commend/root.md
+    - Commend/group.md
+    - Commend/PermissionControl.md
   - Software:
     - Software/index.md
     - Software/vim.md
-  - time:
-    - 16.md
-    - 26.md
-    - 36.md
-    - 46.md
-    - 56.md
-    - 66.md
   # - Ubuntu-Exploring: 
     # - Ubuntu-Exploring/clash.md
     # - Ubuntu-Exploring/index.md
