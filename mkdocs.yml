@@ -105,6 +105,7 @@ nav:
     - Commend/tail.md
     - Commend/root.md
     - Commend/group.md
+    - Commend/PermissionControl.md
   - Software:
     - Software/index.md
     - Software/vim.md
