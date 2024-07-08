@@ -4,8 +4,6 @@ on:
     branches:
       - master 
       - main
-      - vim
-      - root
 permissions:
   contents: write
 jobs:
