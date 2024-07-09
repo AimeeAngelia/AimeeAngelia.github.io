@@ -106,6 +106,10 @@ nav:
     - Commend/root.md
     - Commend/group.md
     - Commend/PermissionControl.md
+  - History:
+    - History/index.md
+    - History/sudo.md
+    - History/vim.md
   - Software:
     - Software/index.md
     - Software/vim.md
