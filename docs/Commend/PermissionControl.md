@@ -66,22 +66,3 @@ chown :root hello.txt		//将hello.txt所属用户组修改为root
 chown root:KA hello.txt		//将hello.txt所属用户修改为root,用户组修改为KA
 chown -R root test		//将文件夹test的所属用户修改为root并对文件夹内全部内容应用同样规则
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
