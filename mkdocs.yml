@@ -106,6 +106,15 @@ nav:
     - Commend/root.md
     - Commend/group.md
     - Commend/PermissionControl.md
+    - Commend/net.md
+    - Commend/port.md
+    - Commend/process.md
+    - Commend/hostProcess.md
+    - Commend/ShortcutKey.md
+    - Commend/SoftwareInstallation.md
+    - Commend/env.md
+    - Commend/up&down.md
+    - Commend/zip.md
   - History:
     - History/index.md
     - History/sudo.md
@@ -113,9 +122,3 @@ nav:
   - Software:
     - Software/index.md
     - Software/vim.md
-  # - Ubuntu-Exploring: 
-    # - Ubuntu-Exploring/clash.md
-    # - Ubuntu-Exploring/index.md
-  # - Note:
-    # - Note/stir.md
-    # - Note/fonts.md
