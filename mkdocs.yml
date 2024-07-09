@@ -112,6 +112,9 @@ nav:
     - Commend/hostProcess.md
     - Commend/ShortcutKey.md
     - Commend/SoftwareInstallation.md
+    - Commend/env.md
+    - Commend/up&down.md
+    - Commend/zip.md
   - Software:
     - Software/index.md
     - Software/vim.md
