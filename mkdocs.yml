@@ -83,6 +83,7 @@ nav:
     - index.html
   - Commend: 
     - Commend/index.md
+    - Commend/man.md
     - Commend/zip.md
     - Commend/up&down.md
     - Commend/env.md
@@ -114,6 +115,9 @@ nav:
     - Commend/pwd.md
     - Commend/cd.md
     - Commend/ls.md
+  - Fan
+    - Fan/index.md
+    - Fan/banner.md
   - History:
     - History/index.md
     - History/sudo.md
