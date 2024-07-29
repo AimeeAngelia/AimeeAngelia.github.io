@@ -81,6 +81,7 @@ copyright: |
 nav:
   - Home: 
     - index.html
+    - index.html.old
   - Commend: 
     - Commend/index.md
     - Commend/man.md
