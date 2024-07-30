@@ -4,7 +4,7 @@ on:
     branches:
       - master 
       - main
-      - bug#1
+      # - bug#1
 permissions:
   contents: write
 jobs:
