@@ -1,99 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+<!-- 作者:@Aimee -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>随机密码哎😘~</title> -->
-    <!-- <link rel="icon" href="https://aimeeangelia.github.io/Pictures/padlock.png" type="image/png"> -->
-    <link rel="icon" href="https://www.anook.cc/Pictures/padlock.png" type="image/png">
-    <title>随机密码哎😘~</title>
+    <link rel="icon" href="https://www.anook.cc/Pictures/Web/icons8-delivery-ios-17-outlined-96.png" type="image/png">
+    <title>录取通知书喵~</title>
     <style>
+        @font-face {
+            font-family: 'SoftLove';
+            src: url('https://www.anook.cc/Font/softLove.ttf') format('truetype');
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
             background-image: url('https://aimeeangelia.github.io/Pictures/kawaii.jpg');
             background-size: cover;
-            background-position: center;
-            color: white;
-            text-shadow: 1px 1px 2px black;
-        }
-        #password {
-            font-size: 1.5em;
-            margin: 20px 0;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 1em;
-            background-color: rgba(255, 255, 255, 0.8);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="number"] {
-            padding: 10px;
-            font-size: 1em;
-            margin: 10px 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: rgb(241, 140, 140);
+            font-family: 'SoftLove', Arial, sans-serif;
             text-align: center;
-            width: 200px;
-        }
-        .options {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        .options label {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px;
-            border-radius: 5px;
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        #status {
+            font-size: 2em;
         }
     </style>
-</head>
-<body>
-    <h1>随机密码生成器</h1>
-    <input type="number" id="length" placeholder="输入密码长度 (默认16)" min="1" max="128" value="16">
-    <div class="options">
-        <label><input type="checkbox" id="uppercase" checked> 大写字母</label>
-        <label><input type="checkbox" id="lowercase" checked> 小写字母</label>
-        <label><input type="checkbox" id="numbers" checked> 数字</label>
-        <label><input type="checkbox" id="special" checked> 特殊字符</label>
-    </div>
-    <div id="password">点击按钮生成密码</div>
-    <button onclick="generatePassword()">生成密码</button>
-    <div class="footer">
-        v0.0.1 作者: @Kitte
-    </div>
     <script>
-        function generatePassword() {
-            const length = parseInt(document.getElementById("length").value) || 16;
-            const useUppercase = document.getElementById("uppercase").checked;
-            const useLowercase = document.getElementById("lowercase").checked;
-            const useNumbers = document.getElementById("numbers").checked;
-            const useSpecial = document.getElementById("special").checked;
+        async function checkAdmissionStatus() {
+            try {
+                const response = await fetch('https://ao.henu.edu.cn/TeachSystem/TeachSystem/GetExamResult?ksh=24411419155127&xm=%E9%99%88%E5%8D%9A%E7%BE%BD');
+                const data = await response.json();
 
-            let charset = "";
-            if (useUppercase) charset += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            if (useLowercase) charset += "abcdefghijklmnopqrstuvwxyz";
-            if (useNumbers) charset += "0123456789";
-            if (useSpecial) charset += "!@#$%^&*()_+[]{}|;:',.<>?";
+                // 检查是否成功获取数据
+                if (data.result && data.data) {
+                    const yjhValue = data.data.YJH;
+                    // const yjhValue = data.data.XM;
+                    // const yjhValue = '4126897497265872149';
 
-            if (charset === "") {
-                document.getElementById("password").innerText = "请选择至少一个字符类型";
-                return;
+                    // 根据YJH字段的值显示不同的消息
+                    const message = yjhValue === null ? '录取通知书未发货喵~' : `录取通知书正在向你飞扑而来~,邮递单号：${yjhValue}`;
+                    // const message = yjhValue === null ? '录取通知书已发货,邮政编码：${yjhValue}' : `录取通知书未发货`;
+                    document.getElementById('status').innerText = message;
+                } else {
+                    document.getElementById('status').innerText = '无法获取录取通知书状态';
+                }
+            } catch (error) {
+                console.error('请求失败:', error);
+                document.getElementById('status').innerText = '请求失败';
             }
-
-            let password = "";
-            for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * charset.length);
-                password += charset[randomIndex];
-            }
-            document.getElementById("password").innerText = password;
         }
+
+        // 当页面加载完成后调用checkAdmissionStatus函数
+        window.onload = checkAdmissionStatus;
     </script>
+</head>
+
+<body>
+    <div>
+        <h1>录取通知书状态</h1>
+        <p id="status">正在检查录取通知书状态...</p>
+    </div>
 </body>
+
 </html>

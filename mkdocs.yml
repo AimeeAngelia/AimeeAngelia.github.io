@@ -81,40 +81,44 @@ copyright: |
 nav:
   - Home: 
     - index.html
-    - index.old.md
+    - index.old.html
   - Commend: 
     - Commend/index.md
-    - Commend/ls.md
-    - Commend/cd.md
-    - Commend/pwd.md
-    - Commend/mkdir.md
-    - Commend/touch.md
-    - Commend/cat.md
-    - Commend/more.md
-    - Commend/cp.md
-    - Commend/mv.md
-    - Commend/rm.md
-    - Commend/which.md
-    - Commend/find.md
-    - Commend/echo.md
-    - Commend/echo``.md
-    - Commend/grep.md
-    - Commend/wc.md
-    - Commend/PipeCharacter.md
-    - Commend/RedirectionCharacter.md
-    - Commend/tail.md
-    - Commend/root.md
-    - Commend/group.md
-    - Commend/PermissionControl.md
-    - Commend/net.md
-    - Commend/port.md
-    - Commend/process.md
-    - Commend/hostProcess.md
-    - Commend/ShortcutKey.md
-    - Commend/SoftwareInstallation.md
-    - Commend/env.md
-    - Commend/up&down.md
+    - Commend/man.md
     - Commend/zip.md
+    - Commend/up&down.md
+    - Commend/env.md
+    - Commend/SoftwareInstallation.md
+    - Commend/ShortcutKey.md
+    - Commend/hostProcess.md
+    - Commend/process.md
+    - Commend/port.md
+    - Commend/net.md
+    - Commend/PermissionControl.md
+    - Commend/group.md
+    - Commend/root.md
+    - Commend/tail.md
+    - Commend/RedirectionCharacter.md
+    - Commend/PipeCharacter.md
+    - Commend/wc.md
+    - Commend/grep.md
+    - Commend/echo``.md
+    - Commend/echo.md
+    - Commend/find.md
+    - Commend/which.md
+    - Commend/rm.md
+    - Commend/mv.md
+    - Commend/cp.md
+    - Commend/more.md
+    - Commend/cat.md
+    - Commend/touch.md
+    - Commend/mkdir.md
+    - Commend/pwd.md
+    - Commend/cd.md
+    - Commend/ls.md
+  - Fan
+    - Fan/index.md
+    - Fan/banner.md
   - History:
     - History/index.md
     - History/sudo.md
