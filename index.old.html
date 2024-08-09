@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<!-- 作者:@Aimee -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.anook.cc/Pictures/Web/icons8-delivery-ios-17-outlined-96.png" type="image/png">
+    <title>录取通知书喵~</title>
+    <style>
+        @font-face {
+            font-family: 'SoftLove';
+            /* src: url('https://www.anook.cc/Font/softLove.ttf') format('truetype'); */
+            src: local('C:\Users\Aimee\Downloads\softLove.ttf'),
+                url('https://www.anook.cc/Font/softLove.ttf');
+        }
+
+        body {
+            background-image: url('https://aimeeangelia.github.io/Pictures/kawaii.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: rgb(241, 140, 140);
+            font-family: 'SoftLove', Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        #status {
+            font-size: 2em;
+        }
+    </style>
+    <script>
+        async function checkAdmissionStatus() {
+            try {
+                const response = await fetch('https://ao.henu.edu.cn/TeachSystem/TeachSystem/GetExamResult?ksh=24411419155127&xm=%E9%99%88%E5%8D%9A%E7%BE%BD');
+                const data = await response.json();
+
+                // 检查是否成功获取数据
+                if (data.result && data.data) {
+                    const yjhValue = data.data.YJH;
+                    // const yjhValue = data.data.XM;
+                    // const yjhValue = '4126897497265872149';
+
+                    // 根据YJH字段的值显示不同的消息
+                    const message = yjhValue === null ? '录取通知书未发货喵~' : `录取通知书正在向你飞扑而来~,邮递单号：${yjhValue}`;
+                    // const message = yjhValue === null ? '录取通知书已发货,邮政编码：${yjhValue}' : `录取通知书未发货`;
+                    document.getElementById('status').innerText = message;
+                } else {
+                    document.getElementById('status').innerText = '无法获取录取通知书状态';
+                }
+            } catch (error) {
+                console.error('请求失败:', error);
+                document.getElementById('status').innerText = '请求失败';
+            }
+        }
+
+        // 当页面加载完成后调用checkAdmissionStatus函数
+        window.onload = checkAdmissionStatus;
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>录取通知书状态</h1>
+        <p id="status">正在检查录取通知书状态...</p>
+    </div>
+</body>
+
+</html>
