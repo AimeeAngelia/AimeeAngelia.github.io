@@ -116,9 +116,6 @@ nav:
     - Commend/pwd.md
     - Commend/cd.md
     - Commend/ls.md
-  - Fan
-    - Fan/index.md
-    - Fan/banner.md
   - History:
     - History/index.md
     - History/sudo.md
@@ -126,3 +123,5 @@ nav:
   - Software:
     - Software/index.md
     - Software/vim.md
+  - Link:
+    - index.md
