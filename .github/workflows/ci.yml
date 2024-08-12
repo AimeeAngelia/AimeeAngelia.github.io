@@ -4,7 +4,7 @@ on:
     branches:
       - master 
       - main
-      - GoogleConsole
+      - bug#2
 permissions:
   contents: write
 jobs:
